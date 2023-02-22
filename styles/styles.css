@@ -242,6 +242,10 @@ header ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 25vh;
+}
+header ul img {
+  width: 80px;
 }
 header li {
   list-style: none;
@@ -266,14 +270,13 @@ header .banner {
 header .banner .mainGhost,
 header .banner .whiteStar {
   position: relative;
-  margin-left: 50px;
 }
 header .banner .whiteStar {
   position: absolute;
-  top: 0;
+  right: 0;
   background: none;
-  -webkit-animation: sparkle 1s infinite;
-          animation: sparkle 1s infinite;
+  -webkit-animation: sparkle 1.5s infinite;
+          animation: sparkle 1.5s infinite;
 }
 header .banner .bannerMainImgs {
   position: relative;
@@ -282,9 +285,9 @@ header .banner .mainGhost {
   -webkit-animation: jump 2.5s infinite;
           animation: jump 2.5s infinite;
 }
-header .banner .bannerImgs {
-  position: absolute;
-  background: none;
+header .banner .bannerContent {
+  margin-right: 200px;
+  z-index: 10;
 }
 header h1 {
   font-size: 10rem;
@@ -294,14 +297,18 @@ header p {
   font-size: 2rem;
 }
 header .airplanePerson {
-  bottom: 10px;
-  margin-right: 1400px;
+  position: absolute;
+  top: 65%;
+  left: 350px;
+  width: 23%;
   -webkit-animation: jump 2.5s infinite;
           animation: jump 2.5s infinite;
 }
 header .chatPerson {
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
+  position: absolute;
+  top: 75%;
+  -webkit-animation: jump 2s infinite;
+          animation: jump 2s infinite;
 }
 
 * {

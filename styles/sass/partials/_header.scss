@@ -6,6 +6,11 @@ header{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        height: 25vh;
+
+        img{
+            width: 80px;
+        }
     }
     li{
         list-style: none;
@@ -24,14 +29,13 @@ header{
         .mainGhost,
         .whiteStar{
             position: relative;
-            margin-left: 50px;
         }
 
         .whiteStar{
             position: absolute;
-            top: 0;
+            right: 0;
             background: none;
-            animation: sparkle 1s infinite;
+            animation: sparkle 1.5s infinite;
         }
 
         .bannerMainImgs{
@@ -40,10 +44,10 @@ header{
         .mainGhost{
             animation: jump 2.5s infinite;
         }
-
-        .bannerImgs{
-            position: absolute;
-            background: none;
+        
+        .bannerContent{
+            margin-right: 200px;
+            z-index: 10;
         }
     }
     h1{
@@ -54,13 +58,16 @@ header{
         font-size: 2rem;
     }
     .airplanePerson{
-        bottom: 10px;
-        // transform: translateX(-150%);
-        margin-right: 1400px;
+        position: absolute;
+        top: 65%;
+        left: 350px;
+        width: 23%;
         animation: jump 2.5s infinite;
     }
     .chatPerson{
-        transform: translateY(150%);
+        position: absolute;
+        top: 75%;
+        animation: jump 2s infinite;
     }
 }
 
