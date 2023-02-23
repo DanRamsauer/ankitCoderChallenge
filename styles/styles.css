@@ -333,14 +333,14 @@ header .bannerLine,
 header .blurredGhostImg1,
 header .blurredGhostImg2 {
   position: absolute;
-  -webkit-animation: jump 2s infinite;
-          animation: jump 2s infinite;
+  -webkit-animation: jump 2.5s infinite;
+          animation: jump 2.5s infinite;
 }
 header .bannerBlackStar,
 header .bannerWhiteStar,
 header .bannerOrangeStar {
-  -webkit-animation: sparkle 1.5s infinite;
-          animation: sparkle 1.5s infinite;
+  -webkit-animation: sparkle 1.5s infinite ease-in-out;
+          animation: sparkle 1.5s infinite ease-in-out;
   position: absolute;
 }
 header .airplanePerson {
@@ -412,9 +412,13 @@ header .bannerOrangeStar {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  100% {
+  50% {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes sparkle {
@@ -422,9 +426,69 @@ header .bannerOrangeStar {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  100% {
+  50% {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes topGallery {
+  0% {
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+  50% {
+    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
+  }
+  100% {
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+}
+@keyframes topGallery {
+  0% {
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+  50% {
+    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
+  }
+  100% {
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+}
+@-webkit-keyframes bottomGallery {
+  0% {
+    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
+  }
+  50% {
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+  100% {
+    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
+  }
+}
+@keyframes bottomGallery {
+  0% {
+    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
+  }
+  50% {
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+  }
+  100% {
+    -webkit-transform: translateX(-19%);
+            transform: translateX(-19%);
   }
 }
 @font-face {
@@ -444,6 +508,32 @@ h4 {
 
 p {
   font-family: Pfont;
+}
+
+.flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h3 {
+  font-size: 2.1rem;
+  color: #f77b21;
+  font-weight: 400;
+  margin: 0;
+  height: 90px;
+}
+
+h2 {
+  font-size: 6rem;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+  line-height: 100px;
 }
 
 * {
@@ -466,12 +556,139 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-align: start;
+  position: relative;
 }
-.about h2,
-.about h3 {
-  text-transform: uppercase;
+.about .wrapper {
+  width: 45%;
 }
-.about h3 {
-  font-size: 2.3rem;
-  color: #f77b21;
+.about h3::after {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  background-color: #f77b21;
+  width: 150px;
+  margin-left: 25px;
+  top: 7.3%;
+}
+.about .aboutOrangeStar {
+  position: absolute;
+}
+.about .flexBox {
+  line-height: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.about .aboutImgs {
+  width: 95%;
+  position: relative;
+}
+.about .paragraph {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.about .aboutOrangeStar,
+.about .aboutWhiteStar,
+.about .aboutBlackStar,
+.about .aboutArrow {
+  position: absolute;
+}
+.about .aboutWhiteStar,
+.about .aboutBlackStar {
+  -webkit-animation: jump 2.5s infinite;
+          animation: jump 2.5s infinite;
+}
+.about .aboutArrow {
+  top: 70%;
+  left: 40%;
+}
+.about .aboutOrangeStar {
+  top: -150%;
+  right: -145%;
+}
+.about .aboutWhiteStar {
+  top: 30%;
+}
+.about .aboutBlackStar {
+  top: 85%;
+  left: -10%;
+}
+
+.favourites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 200px;
+  position: relative;
+}
+.favourites .wrapper {
+  width: 45%;
+}
+.favourites h3::after {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  background-color: #f77b21;
+  width: 150px;
+  margin-left: 25px;
+  top: 3.5%;
+}
+.favourites li {
+  list-style: none;
+}
+.favourites .topGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: topGallery 15s infinite ease-in-out;
+          animation: topGallery 15s infinite ease-in-out;
+  margin-top: 3%;
+  white-space: nowrap;
+}
+.favourites .bottomGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: bottomGallery 15s infinite ease-in-out;
+          animation: bottomGallery 15s infinite ease-in-out;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+.favourites .imageContainer {
+  border-radius: 20%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.favourites img {
+  width: 25vw;
+}
+
+.roadmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.roadmap .roadmapBlackStar {
+  position: absolute;
 }

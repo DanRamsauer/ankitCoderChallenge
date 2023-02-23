@@ -1,3 +1,5 @@
+// TODO: add circle on header srounf ghost and change logo
+
 header{
     position: relative;
 
@@ -39,7 +41,7 @@ header{
             position: relative;
         }
         .mainGhost{
-            animation: jump 2.5s infinite;
+            animation: $jump;
         }
         
         .bannerContent{
@@ -95,13 +97,13 @@ header{
     .blurredGhostImg1,
     .blurredGhostImg2{
         position: absolute;
-        animation: jump 2s infinite;
+        animation: $jump;
     }
 
     .bannerBlackStar,
     .bannerWhiteStar,
     .bannerOrangeStar{
-        animation: sparkle 1.5s infinite;
+        animation: $sparkle;
         position: absolute;
     }
 

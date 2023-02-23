@@ -1,0 +1,10 @@
+.roadmap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .roadmapBlackStar{
+        position: absolute;
+    }
+}

@@ -1,0 +1,46 @@
+// TODO: fix the screen size being able to get bigger while the screen is going back and fourth contain it to a contaioner
+
+.favourites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+
+    .wrapper{
+        width: 45%;
+    }
+    h3::after{
+        content: "";
+        position: absolute;
+        height: 2.5px;
+        background-color: $siteOrange;
+        width: 150px;
+        margin-left: 25px;
+        top: 3.5%;
+    }
+    li{
+        list-style: none;
+    }
+    .topGallery{
+        display: flex;
+        animation: $topgallery;
+        margin-top: 3%;
+        white-space: nowrap;
+    }
+    .bottomGallery{
+        display: flex;
+        animation: $bottomgallery;
+        margin-top: 20px;
+        white-space: nowrap;
+    }
+    .imageContainer{
+        border-radius: 20%;
+        overflow: hidden;
+        margin: 0 20px;
+    }
+    img{
+        width: 25vw;
+    }
+}

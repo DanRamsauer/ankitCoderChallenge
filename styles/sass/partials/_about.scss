@@ -5,14 +5,59 @@
     justify-content: center;
     align-items: center;
     text-align: start;
-    
-    h2,
-    h3{
-        text-transform: uppercase;
+    position: relative;
+
+    .wrapper{
+        width: 45%;
     }
 
-    h3{
-        font-size: 2.3rem;
-        color: $siteOrange;
+    h3::after{
+        content: "";
+        position: absolute;
+        height: 2.5px;
+        background-color: $siteOrange;
+        width: 150px;
+        margin-left: 25px;
+        top: 7.3%;
+    }
+    .aboutOrangeStar{
+        position: absolute
+    }
+    .flexBox{
+        line-height: normal;
+        flex-direction: row-reverse;
+    }
+    .aboutImgs{
+        width: 95%;
+        position: relative;
+    }
+    .paragraph{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .aboutOrangeStar,
+    .aboutWhiteStar,
+    .aboutBlackStar,
+    .aboutArrow{
+        position: absolute;
+    }
+    .aboutWhiteStar,
+    .aboutBlackStar{
+        animation: $jump;
+    }
+    .aboutArrow{
+        top: 70%;
+        left: 40%;
+    }
+    .aboutOrangeStar{
+        top: -150%;
+        right: -145%;
+    }
+    .aboutWhiteStar{
+        top: 30%;
+    }
+    .aboutBlackStar{
+        top: 85%;
+        left: -10%;
     }
 }
