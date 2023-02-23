@@ -1,0 +1,25 @@
+@font-face {
+    font-family: headerFont;
+    src: url(../../assets/Fonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: pFont;
+    src: url(../../assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: headerFont;
+}
+
+p{
+    font-family: Pfont;
+}
+
+*{
+    background-color: #f8e5df;
+    // border: solid red 2px;
+}

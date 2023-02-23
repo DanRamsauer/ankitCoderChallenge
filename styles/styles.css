@@ -267,16 +267,12 @@ header .banner {
       -ms-flex-align: center;
           align-items: center;
 }
-header .banner .mainGhost,
-header .banner .whiteStar {
+header .banner .mainGhost {
   position: relative;
 }
-header .banner .whiteStar {
-  position: absolute;
+header .banner .bannerWhiteStar {
   right: 0;
   background: none;
-  -webkit-animation: sparkle 1.5s infinite;
-          animation: sparkle 1.5s infinite;
 }
 header .banner .bannerMainImgs {
   position: relative;
@@ -286,33 +282,102 @@ header .banner .mainGhost {
           animation: jump 2.5s infinite;
 }
 header .banner .bannerContent {
-  margin-right: 200px;
+  margin-right: 90px;
+  margin-top: 100px;
   z-index: 10;
 }
+header .banner .collectBanner {
+  margin-left: 180px;
+  background: none;
+}
+header .banner .collectBanner::before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 4px;
+  background: #f77b21;
+  left: 28.5%;
+  top: 68%;
+  position: absolute;
+}
+header .banner button {
+  width: 250px;
+  font-size: 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: 6px 6px #f77b21;
+          box-shadow: 6px 6px #f77b21;
+  margin-top: 50px;
+  border: 1px solid #f77b21;
+  padding: 20px;
+  color: #f77b21;
+  text-transform: uppercase;
+  font-family: pFont;
+  font-weight: 800;
+  border-radius: 40px;
+}
 header h1 {
-  font-size: 10rem;
+  font-size: 8.4rem;
   margin: 0 auto;
+  line-height: 130px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 header p {
-  font-size: 2rem;
+  font-size: 1.9rem;
+  margin: 0 auto;
+  font-weight: 500;
 }
-header .airplanePerson {
+header .airplanePerson,
+header .chatPerson,
+header .bannerLine,
+header .blurredGhostImg1,
+header .blurredGhostImg2 {
   position: absolute;
-  top: 65%;
-  left: 350px;
-  width: 23%;
-  -webkit-animation: jump 2.5s infinite;
-          animation: jump 2.5s infinite;
-}
-header .chatPerson {
-  position: absolute;
-  top: 75%;
   -webkit-animation: jump 2s infinite;
           animation: jump 2s infinite;
 }
-
-* {
-  background-color: #faf0e6;
+header .bannerBlackStar,
+header .bannerWhiteStar,
+header .bannerOrangeStar {
+  -webkit-animation: sparkle 1.5s infinite;
+          animation: sparkle 1.5s infinite;
+  position: absolute;
+}
+header .airplanePerson {
+  top: 67%;
+  left: 320px;
+  width: 25%;
+}
+header .chatPerson {
+  top: 78%;
+  right: 15%;
+}
+header .blurredGhostImg1 {
+  top: 20%;
+  left: 44%;
+  z-index: 20;
+}
+header .blurredGhostImg2 {
+  bottom: -10%;
+  left: 48%;
+  z-index: 20;
+}
+header .bannerLine {
+  left: 20%;
+  top: 37%;
+}
+header .bannerBlackStar {
+  background: none;
+  width: 19px;
+  bottom: -20%;
+  left: 54%;
+  z-index: 30;
+}
+header .bannerOrangeStar {
+  background: none;
+  top: 43%;
+  right: 22%;
+  width: 14px;
 }
 
 @-webkit-keyframes jump {
@@ -361,4 +426,52 @@ header .chatPerson {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
+}
+@font-face {
+  font-family: headerFont;
+  src: url(../../assets/Fonts/Righteous/Righteous-Regular.ttf);
+}
+@font-face {
+  font-family: pFont;
+  src: url(../../assets/Fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: headerFont;
+}
+
+p {
+  font-family: Pfont;
+}
+
+* {
+  background-color: #f8e5df;
+}
+
+.about {
+  margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
+}
+.about h2,
+.about h3 {
+  text-transform: uppercase;
+}
+.about h3 {
+  font-size: 2.3rem;
+  color: #f77b21;
 }
