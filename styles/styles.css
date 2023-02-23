@@ -253,9 +253,6 @@ header li {
 header i {
   color: black;
 }
-header nav {
-  background-image: url(../../../assets/images/banner-gradient.png);
-}
 header .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +503,8 @@ h4 {
   font-family: headerFont;
 }
 
-p {
+p,
+h5 {
   font-family: Pfont;
 }
 
@@ -532,12 +530,38 @@ h2 {
 
 h2,
 h3 {
-  text-transform: uppercase;
   line-height: 100px;
 }
 
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.8rem;
+  color: #f77b21;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 45%;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  background-color: #f77b21;
+  width: 150px;
+  margin-left: 25px;
+  top: 2.5%;
+}
+
 * {
-  background-color: #f8e5df;
+  background-color: #fdf2e5;
 }
 
 .about {
@@ -557,9 +581,6 @@ h3 {
           align-items: center;
   text-align: start;
   position: relative;
-}
-.about .wrapper {
-  width: 45%;
 }
 .about h3::after {
   content: "";
@@ -632,18 +653,6 @@ h3 {
   margin-top: 200px;
   position: relative;
 }
-.favourites .wrapper {
-  width: 45%;
-}
-.favourites h3::after {
-  content: "";
-  position: absolute;
-  height: 2.5px;
-  background-color: #f77b21;
-  width: 150px;
-  margin-left: 25px;
-  top: 3.5%;
-}
 .favourites li {
   list-style: none;
 }
@@ -688,7 +697,76 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 5%;
+  position: relative;
+}
+.roadmap .roadmapBlackStar,
+.roadmap .roadmapArrow {
+  position: absolute;
 }
 .roadmap .roadmapBlackStar {
+  top: 0;
+  right: 38%;
+}
+.roadmap .roadmapArrow {
+  background: none;
+  top: 22%;
+  left: 35%;
+}
+.roadmap .phaseOne,
+.roadmap .phaseTwo {
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.roadmap .phaseOneLeft {
+  padding-right: 80px;
+  width: 40%;
+}
+.roadmap .phaseOneRight {
+  background-color: #ffe1cb;
+  position: relative;
+  border-radius: 100px;
+}
+.roadmap h5,
+.roadmap h4 {
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+.roadmap h4 {
+  font-size: 4rem;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.roadmap p {
+  font-size: 1.1rem;
+}
+.roadmap .phaseOneWhiteStar,
+.roadmap .phaseOneBlackStar {
   position: absolute;
+  -webkit-animation: sparkle 1.5s infinite ease-in-out;
+          animation: sparkle 1.5s infinite ease-in-out;
+}
+.roadmap .holdingPhone {
+  background: none;
+  padding: 50px;
+  -webkit-animation: jump 2.5s infinite;
+          animation: jump 2.5s infinite;
+}
+.roadmap .phaseOneWhiteStar {
+  top: 10%;
+  right: 8%;
+  background: none;
+  width: 60px;
+}
+.roadmap .phaseOneBlackStar {
+  width: 15px;
 }

@@ -15,7 +15,8 @@ h4{
     font-family: headerFont;
 }
 
-p{
+p,
+h5{
     font-family: Pfont;
 }
 
@@ -38,11 +39,36 @@ h2{
 
 h2,
 h3{
-    text-transform: uppercase;
     line-height: 100px;
 }
+h2,
+h3,
+h4,
+h5{
+    text-transform: uppercase;
+}
+h4{
+    
+}
+h5{
+    font-size: 1.8rem;
+    color: $siteOrange;
+    font-weight: 500;
+}
 
+.wrapper{
+    width: 45%;
+}
+h3::after{
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    background-color: $siteOrange;
+    width: 150px;
+    margin-left: 25px;
+    top: 2.5%;
+}
 *{
-    background-color: #f8e5df;
+    background-color: #fdf2e5;
     // border: solid red 2px;
 }

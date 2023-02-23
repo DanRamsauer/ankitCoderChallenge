@@ -1,4 +1,4 @@
-// TODO: fix the screen size being able to get bigger while the screen is going back and fourth contain it to a contaioner
+// TODO: fix the screen size being able to get bigger while the screen is going back and fourth contain it to a contaioner maybe just add a wrapper to it
 
 .favourites{
     display: flex;
@@ -8,18 +8,6 @@
     margin-top: 200px;
     position: relative;
 
-    .wrapper{
-        width: 45%;
-    }
-    h3::after{
-        content: "";
-        position: absolute;
-        height: 2.5px;
-        background-color: $siteOrange;
-        width: 150px;
-        margin-left: 25px;
-        top: 3.5%;
-    }
     li{
         list-style: none;
     }

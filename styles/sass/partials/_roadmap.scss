@@ -3,8 +3,69 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
+    position: relative;
 
-    .roadmapBlackStar{
+    .roadmapBlackStar,
+    .roadmapArrow{
         position: absolute;
+    }
+    .roadmapBlackStar{
+        top: 0;
+        right: 38%;
+    }
+    .roadmapArrow{
+        background: none;
+        top: 22%;
+        left: 35%;
+    }
+    .phaseOne,
+    .phaseTwo{
+        padding-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phaseOneLeft{
+        padding-right: 80px;
+        width: 40%;
+    }
+    .phaseOneRight{
+        background-color: #ffe1cb;
+        position: relative;
+        border-radius: 100px;
+    }
+    h5,
+    h4{
+        text-transform: capitalize;
+        margin: 0;
+        padding: 0;
+    }
+    h4{
+        font-size: 4rem;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .phaseOneWhiteStar,
+    .phaseOneBlackStar{
+        position: absolute;
+        animation: $sparkle;
+    }
+    .holdingPhone{
+        background: none;
+        padding: 50px;
+        animation: $jump;
+    }
+    .phaseOneWhiteStar{
+        top: 10%;
+        right: 8%;
+        background: none;
+        width: 60px;
+    }
+    .phaseOneBlackStar{
+        width: 15px;
     }
 }
