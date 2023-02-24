@@ -47,9 +47,6 @@ h4,
 h5{
     text-transform: uppercase;
 }
-h4{
-    
-}
 h5{
     font-size: 1.8rem;
     color: $siteOrange;
@@ -67,6 +64,20 @@ h3::after{
     width: 150px;
     margin-left: 25px;
     top: 2.5%;
+}
+button{
+    width: 250px;
+    font-size: 1.5rem;
+    background-color: white;
+    box-shadow: 6px 6px $siteOrange;
+    margin-top: 50px;
+    border: 1px solid $siteOrange;
+    padding: 20px;
+    color: $siteOrange;
+    text-transform: uppercase;
+    font-family: pFont;
+    font-weight: 800;
+    border-radius: 40px;
 }
 *{
     background-color: #fdf2e5;

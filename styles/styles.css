@@ -297,21 +297,6 @@ header .banner .collectBanner::before {
   top: 68%;
   position: absolute;
 }
-header .banner button {
-  width: 250px;
-  font-size: 1.5rem;
-  background-color: white;
-  -webkit-box-shadow: 6px 6px #f77b21;
-          box-shadow: 6px 6px #f77b21;
-  margin-top: 50px;
-  border: 1px solid #f77b21;
-  padding: 20px;
-  color: #f77b21;
-  text-transform: uppercase;
-  font-family: pFont;
-  font-weight: 800;
-  border-radius: 40px;
-}
 header h1 {
   font-size: 8.4rem;
   margin: 0 auto;
@@ -402,6 +387,62 @@ header .bannerOrangeStar {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+@-webkit-keyframes phaseTwoJump {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes phaseTwoJump {
+  0% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@-webkit-keyframes phaseOneJump {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes phaseOneJump {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
 }
 @-webkit-keyframes sparkle {
@@ -558,6 +599,22 @@ h3::after {
   width: 150px;
   margin-left: 25px;
   top: 2.5%;
+}
+
+button {
+  width: 250px;
+  font-size: 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: 6px 6px #f77b21;
+          box-shadow: 6px 6px #f77b21;
+  margin-top: 50px;
+  border: 1px solid #f77b21;
+  padding: 20px;
+  color: #f77b21;
+  text-transform: uppercase;
+  font-family: pFont;
+  font-weight: 800;
+  border-radius: 40px;
 }
 
 * {
@@ -734,6 +791,7 @@ h3::after {
   background-color: #ffe1cb;
   position: relative;
   border-radius: 100px;
+  max-height: 580px;
 }
 .roadmap h5,
 .roadmap h4 {
@@ -750,23 +808,111 @@ h3::after {
   font-size: 1.1rem;
 }
 .roadmap .phaseOneWhiteStar,
-.roadmap .phaseOneBlackStar {
+.roadmap .phaseOneBlackStar,
+.roadmap .phaseTwoWhiteStar,
+.roadmap .phaseTwoOrangeStar {
   position: absolute;
   -webkit-animation: sparkle 1.5s infinite ease-in-out;
           animation: sparkle 1.5s infinite ease-in-out;
+  background: none;
 }
 .roadmap .holdingPhone {
   background: none;
   padding: 50px;
-  -webkit-animation: jump 2.5s infinite;
-          animation: jump 2.5s infinite;
+  -webkit-animation: phaseOneJump 2.5s infinite;
+          animation: phaseOneJump 2.5s infinite;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 .roadmap .phaseOneWhiteStar {
   top: 10%;
   right: 8%;
-  background: none;
   width: 60px;
 }
 .roadmap .phaseOneBlackStar {
+  width: 15px;
+}
+.roadmap .phaseTwo {
+  margin-top: 50px;
+}
+.roadmap .phaseTwoLeft {
+  background-color: #f2d8b1;
+  position: relative;
+  border-radius: 100px;
+  width: 50%;
+  max-height: 580px;
+}
+.roadmap .phaseTwoRight {
+  padding-left: 80px;
+  width: 40%;
+  position: relative;
+}
+.roadmap .phaseTwoPerson {
+  background: none;
+  padding: 50px;
+  -webkit-animation: phaseTwoJump 2.5s infinite;
+          animation: phaseTwoJump 2.5s infinite;
+  margin: 0 auto;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+.roadmap .phaseLine {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.roadmap .phaseTwoWhiteStar {
+  top: 15%;
+  right: 8%;
+  width: 60px;
+}
+.roadmap .phaseTwoOrangeStar {
+  top: 0;
+  right: -10%;
+  width: 20px;
+}
+
+.community {
+  margin-top: 10%;
+  position: relative;
+}
+.community .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.community p {
+  font-size: 1.7rem;
+  width: 80%;
+}
+.community .communityWhiteStar,
+.community .communityOrangeStar,
+.community .communityBlackStar {
+  position: absolute;
+  background: none;
+  -webkit-animation: sparkle 1.5s infinite ease-in-out;
+          animation: sparkle 1.5s infinite ease-in-out;
+}
+.community .communityWhiteStar {
+  top: 0;
+  right: 15%;
+  width: 40px;
+}
+.community .communityOrangeStar {
+  top: 65%;
+  right: -5%;
   width: 15px;
 }

@@ -34,6 +34,7 @@
         background-color: #ffe1cb;
         position: relative;
         border-radius: 100px;
+        max-height: 580px;
     }
     h5,
     h4{
@@ -50,22 +51,62 @@
         font-size: 1.1rem;
     }
     .phaseOneWhiteStar,
-    .phaseOneBlackStar{
+    .phaseOneBlackStar,
+    .phaseTwoWhiteStar,
+    .phaseTwoOrangeStar{
         position: absolute;
         animation: $sparkle;
+        background: none;
     }
     .holdingPhone{
         background: none;
         padding: 50px;
-        animation: $jump;
+        animation: $phaseOneJump;
+        transform: translateY(100px);
     }
     .phaseOneWhiteStar{
         top: 10%;
         right: 8%;
-        background: none;
         width: 60px;
     }
     .phaseOneBlackStar{
         width: 15px;
+    }
+    .phaseTwo{
+        margin-top: 50px;
+    }
+    .phaseTwoLeft{
+        background-color: #f2d8b1;
+        position: relative;
+        border-radius: 100px;
+        width: 50%;
+        max-height: 580px;
+    }
+    .phaseTwoRight{
+        padding-left: 80px;
+        width: 40%;
+        position: relative;
+    }
+    .phaseTwoPerson{
+        background: none;
+        padding: 50px;
+        animation :$phaseTwoJump;
+        margin: 0 auto;
+        transform: translateY(-100px);
+    }
+    .phaseLine{
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+    }
+    .phaseTwoWhiteStar{
+        top: 15%;
+        right: 8%;
+        width: 60px;
+    }
+    .phaseTwoOrangeStar{
+        top: 0;
+        right: -10%;
+        width: 20px;
     }
 }

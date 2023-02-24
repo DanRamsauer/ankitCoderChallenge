@@ -1,0 +1,36 @@
+.community{
+    margin-top: 10%;
+    position: relative;
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+
+    p{
+        font-size: 1.7rem;
+        width: 80%;
+    }
+    .communityWhiteStar,
+    .communityOrangeStar,
+    .communityBlackStar{
+        position: absolute;
+        background: none;
+        animation: $sparkle;
+    }
+    .communityWhiteStar{
+        top: 0;
+        right: 15%;
+        width: 40px;
+    }
+    .communityOrangeStar{
+        top: 65%;
+        right: -5%;
+        width: 15px;
+    }
+}
