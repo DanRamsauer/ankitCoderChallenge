@@ -82,6 +82,16 @@ button{
 body{
     background-color: #fdf2e5;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    p{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+}
 // *{
 //     border: solid red 2px;
 // }

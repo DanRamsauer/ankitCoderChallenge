@@ -1,0 +1,39 @@
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 400px;
+
+    .logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 100px 0;
+    }
+    .twitter,
+    .facebook,
+    .insta{
+        background-color: white;
+        padding: 80px;
+        border-radius: 150px;
+        height: 200px;
+        width: 30%;
+        position: relative;
+    }
+    img{
+        position: absolute;
+        top: 15%;
+        right: 28%;
+    }
+    li{
+        list-style: none;
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}

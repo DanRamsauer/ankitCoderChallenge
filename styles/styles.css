@@ -621,6 +621,23 @@ body {
   background-color: #fdf2e5;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+footer p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 .about {
   margin-top: 20%;
   display: -webkit-box;
@@ -1039,13 +1056,34 @@ body {
           align-items: center;
 }
 .faq .question p {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.faq .answer {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .faq .answer p {
   font-size: 0.95rem;
   line-height: 140%;
   font-weight: 300;
+}
+.faq .active .answer {
+  max-height: 300px;
+}
+.faq .minusIcon {
+  position: absolute;
+  right: 500000px;
+}
+.faq .active .plusIcon {
+  position: absolute;
+  right: 500000px;
+}
+.faq .active .minusIcon {
+  position: relative;
+  right: 0;
 }
 .faq h2 {
   margin: 0;
@@ -1069,6 +1107,65 @@ body {
   bottom: 10%;
   left: 12%;
 }
-.faq .plusButton {
+.faq .plusIcon,
+.faq .minusIcon {
   color: #f77b21;
+}
+.faq h3::after {
+  top: 6%;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 400px;
+}
+.media .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  margin: 100px 0;
+}
+.media .twitter,
+.media .facebook,
+.media .insta {
+  background-color: white;
+  padding: 80px;
+  border-radius: 150px;
+  height: 200px;
+  width: 30%;
+  position: relative;
+}
+.media img {
+  position: absolute;
+  top: 15%;
+  right: 28%;
+}
+.media li {
+  list-style: none;
+}
+.media p {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
