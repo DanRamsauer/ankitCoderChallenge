@@ -7,6 +7,7 @@ ankitChallenge.init = () => {
 
 const faqs = document.querySelectorAll(".questionsDiv");
 const answer = document.querySelectorAll(".answer");
+const hamburgerMenu = document.querySelectorAll(".hamburgerMenu");
 
 
 ankitChallenge.faqAccordion = () => {
