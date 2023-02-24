@@ -9,7 +9,8 @@ header{
         height: 25vh;
 
         img{
-            width: 80px;
+            width: 180px;
+            filter: brightness(0%);
         }
     }
     li{
@@ -123,5 +124,30 @@ header{
         top: 43%;
         right: 22%;
         width: 14px;
+    }
+    .bannerCircleOne,
+    .bannerCircleTwo,
+    .bannerCircleThree{
+        border-radius: 50%;
+        border: 1px solid #e8dcb5;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: -1;
+    }
+    .bannerCircleOne{
+        width: 23%;
+        height: 58%;
+        transform: translate(25%, -18%);
+    }
+    .bannerCircleTwo{
+        transform: translate(1%, -28%);
+        width: 36%;
+        height: 85%;
+    }
+    .bannerCircleThree{
+        transform: translate(-15%, -35%);
+        width: 50%;
+        height: 120%;
     }
 }

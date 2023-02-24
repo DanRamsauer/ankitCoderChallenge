@@ -1,5 +1,3 @@
-// TODO: fix the screen size being able to get bigger while the screen is going back and fourth contain it to a contaioner maybe just add a wrapper to it
-
 .favourites{
     display: flex;
     flex-direction: column;
@@ -16,12 +14,14 @@
         animation: $topgallery;
         margin-top: 3%;
         white-space: nowrap;
+        overflow: hidden;
     }
     .bottomGallery{
         display: flex;
         animation: $bottomgallery;
         margin-top: 20px;
         white-space: nowrap;
+        overflow: hidden;
     }
     .imageContainer{
         border-radius: 20%;

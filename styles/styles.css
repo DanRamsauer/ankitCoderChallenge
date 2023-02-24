@@ -245,7 +245,9 @@ header ul {
   height: 25vh;
 }
 header ul img {
-  width: 80px;
+  width: 180px;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
 }
 header li {
   list-style: none;
@@ -361,6 +363,34 @@ header .bannerOrangeStar {
   right: 22%;
   width: 14px;
 }
+header .bannerCircleOne,
+header .bannerCircleTwo,
+header .bannerCircleThree {
+  border-radius: 50%;
+  border: 1px solid #e8dcb5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+}
+header .bannerCircleOne {
+  width: 23%;
+  height: 58%;
+  -webkit-transform: translate(25%, -18%);
+          transform: translate(25%, -18%);
+}
+header .bannerCircleTwo {
+  -webkit-transform: translate(1%, -28%);
+          transform: translate(1%, -28%);
+  width: 36%;
+  height: 85%;
+}
+header .bannerCircleThree {
+  -webkit-transform: translate(-15%, -35%);
+          transform: translate(-15%, -35%);
+  width: 50%;
+  height: 120%;
+}
 
 @-webkit-keyframes jump {
   0% {
@@ -387,6 +417,28 @@ header .bannerOrangeStar {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideBarJump {
+  0% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 22%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+@keyframes slideBarJump {
+  0% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 22%;
+  }
+  100% {
+    bottom: 20%;
   }
 }
 @-webkit-keyframes phaseTwoJump {
@@ -755,6 +807,7 @@ footer p {
           animation: topGallery 15s infinite ease-in-out;
   margin-top: 3%;
   white-space: nowrap;
+  overflow: hidden;
 }
 .favourites .bottomGallery {
   display: -webkit-box;
@@ -764,6 +817,7 @@ footer p {
           animation: bottomGallery 15s infinite ease-in-out;
   margin-top: 20px;
   white-space: nowrap;
+  overflow: hidden;
 }
 .favourites .imageContainer {
   border-radius: 20%;
@@ -1185,4 +1239,86 @@ footer p {
 .media p {
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+#slidebar {
+  position: fixed;
+  background: #fdf2e5;
+  top: 0;
+  bottom: 0;
+  left: 1000%;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 40;
+}
+#slidebar a {
+  font-size: 6rem;
+  font-family: headerFont;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  opacity: 0.3;
+  line-height: 90px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#slidebar a:hover {
+  opacity: 1;
+}
+#slidebar .logos {
+  margin-top: 160px;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#slidebar #closeSlide {
+  position: absolute;
+  right: 23%;
+  top: 13%;
+  cursor: pointer;
+}
+#slidebar li {
+  list-style: none;
+}
+#slidebar ul {
+  margin-top: 340px;
+  margin-left: 250px;
+}
+#slidebar .slidebarPerson {
+  position: absolute;
+  bottom: 20%;
+  right: 34%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation: slideBarJump 2.5s infinite;
+          animation: slideBarJump 2.5s infinite;
+}
+#slidebar .slidebarBlackStar,
+#slidebar .slidebarWhiteStar,
+#slidebar .slidebarOrangeStar {
+  position: absolute;
+  -webkit-animation: sparkle 1.5s infinite ease-in-out;
+          animation: sparkle 1.5s infinite ease-in-out;
+}
+#slidebar .slidebarBlackStar {
+  bottom: 23%;
+  left: 40%;
+  width: 15px;
+}
+#slidebar .slidebarOrangeStar {
+  top: 35%;
+  right: 43%;
+  width: 14px;
+}
+#slidebar .slidebarWhiteStar {
+  top: 50%;
+  right: 50%;
+  width: 80px;
+}
+
+#slidebar.open {
+  left: 0;
 }

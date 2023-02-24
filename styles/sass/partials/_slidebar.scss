@@ -1,0 +1,83 @@
+#slidebar{
+    position: fixed;
+    background: $mainSiteColor;
+    top: 0;
+    bottom: 0;
+    left: 1000%;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+
+    a{
+        font-size: 6rem;
+        font-family: headerFont;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        opacity: 0.3;
+        line-height: 90px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a:hover{
+        opacity: 1;
+    }
+
+    .logos{
+        margin-top: 160px;
+        filter: brightness(0%);
+        display: flex;
+    }
+
+    #closeSlide{
+        position: absolute;
+        right: 23%;
+        top: 13%;
+        cursor: pointer;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    ul{
+        margin-top: 340px;
+        margin-left: 250px;
+    }
+
+    .slidebarPerson{
+        position: absolute;
+        bottom: 20%;
+        right: 34%;
+        transform: rotateY(180deg);
+        animation: $slideBarJump;
+    }
+
+    .slidebarBlackStar,
+    .slidebarWhiteStar,
+    .slidebarOrangeStar{
+        position: absolute;
+        animation: $sparkle;
+    }
+
+    .slidebarBlackStar{
+        bottom: 23%;
+        left: 40%;
+        width: 15px;
+    }
+    .slidebarOrangeStar{
+        top: 35%;
+        right: 43%;
+        width: 14px;
+    }
+    .slidebarWhiteStar{
+        top: 50%;
+        right: 50%;
+        width: 80px;
+    }
+}
+
+#slidebar.open{
+    left: 0;
+}

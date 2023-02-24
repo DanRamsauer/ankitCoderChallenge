@@ -1,10 +1,10 @@
-// TODO: add circles on header
-// change logo
+// TODO: 
+
+// add media querys
+// have hambrugermenu work
 // add scrolling nav function
 // change some stuff to php
-// have hambrugermenu work
-// fix scrolling images making the screen wider
-// add media querys
+// fix scrolling images making the screen wider in favs section
 
 
 @font-face {
@@ -103,7 +103,7 @@ button:active {
 }
 
 body{
-    background-color: #fdf2e5;
+    background-color: $mainSiteColor;
 }
 footer{
     display: flex;

@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home"><img src="./assets/images/android-chrome-512x512.png" alt="A logo for the company Ankit Designs"></a>
+                        <a href="#home"><img src="./assets/images/ankit-logo.png" alt="A logo for the company Ankit Designs"></a>
                     </li>
                     <li>
                         <a id="hamburgerMenu" href="#"><i class="fa-solid fa-bars fa-2xl"></i></a>
@@ -25,6 +25,12 @@
             </nav>
             <!-- banner div -->
             <div class="banner">
+                <div class="bannerCircleOne">
+                </div> <!-- Ending of circleOne-->
+                <div class="bannerCircleTwo">
+                </div> <!-- Ending of circleTwo-->
+                <div class="bannerCircleThree">
+                </div> <!-- Ending of circleThree-->
                 <!-- Start of bannerContent -->
                 <div class="bannerContent">
                     <p>A new wave of great collection</p>
@@ -50,8 +56,29 @@
         </header>
         <!--------------------- Main Starts Here ---------------------------------------->
         <main>
+            <!----- Slidebar Starts Here --------->
+            <div id="slidebar">
+                <ul>
+                    <i id="closeSlide" class="fa-regular fa-x fa-xl"></i>
+                    <li><a class="sidebarA" href="#home">home</a></li>
+                    <li><a class="sidebarA" href="#about">about</a></li>
+                    <li><a class="sidebarA" href="#roadmap">roadmap</a></li>
+                    <li><a class="sidebarA" href="#faq">faqs</a></li>
+                    <div class="logos">
+                        <li><a class="sidebarA" href="#"><img src="./assets/images/twitter-logo.png" alt="Twitters logo"></a></li>
+                        <li><a class="sidebarA" href="#"><img src="./assets/images/facebook-logo.png" alt="Facebooks logo"></a></li>
+                        <li><a class="sidebarA" href="#"><img src="./assets/images/insta.png" alt="Instagrams logo"></a></li>
+                    </div>
+                    <div class="slidebarImgs">
+                        <img class="slidebarPerson" src="./assets/images/banner-img-3.png" alt="A person on a paper air plane">
+                        <img class="slidebarOrangeStar" src="./assets/images/particle-orange.png" alt="Orange Star">
+                        <img class="slidebarBlackStar" src="./assets/images/particle-black.png" alt="black Star">
+                        <img class="slidebarWhiteStar" src="./assets/images/particle-white.png" alt="white Star">
+                    </div>
+                </ul>
+            </div>
             <!--------------------- About Starts Here ---------------------------------------->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="wrapper">
                     <h3>About</h3>
                     <h2>Check out <BR/> awesome <BR/> statistics</h2>
@@ -121,7 +148,7 @@
                 </ul>
             </section>
             <!--------------------- Roadmap Starts Here ---------------------------------------->
-            <section class="roadmap">
+            <section id="roadmap" class="roadmap">
                 <div class="wrapper">
                     <img class="roadmapBlackStar" src="./assets/images/particle-black.png" alt="A black star">
                     <img class="roadmapArrow" src="./assets/images/spiral-arrow.png" alt="A spiral arrow">
@@ -163,12 +190,12 @@
             <!--------------------- Community Starts Here ---------------------------------------->
             <section class="community">
                 <div class="wrapper">
-                    <span class="communityCircleOne">
-                    </span> <!-- Ending of circleOne-->
-                    <span class="communityCircleTwo">
-                    </span> <!-- Ending of circleTwo-->
-                    <span class="communityCircleThree">
-                    </span> <!-- Ending of circleThree-->
+                    <div class="communityCircleOne">
+                    </div> <!-- Ending of circleOne-->
+                    <div class="communityCircleTwo">
+                    </div> <!-- Ending of circleTwo-->
+                    <div class="communityCircleThree">
+                    </div> <!-- Ending of circleThree-->
                     <h3>Let's</h3>
                     <h2>Join our <BR/> community</h2>
                     <p>
@@ -190,7 +217,7 @@
                 </div> <!-- Ending of wrapper-->
             </section>
             <!--------------------- Community Starts Here ---------------------------------------->
-            <section class="faq">
+            <section id="faq" class="faq">
                 <div class="wrapper">
                     <h3>FAQ</h3>
                     <h2>Have any <BR/> questions?</h2>
@@ -287,7 +314,3 @@
         <script src="./scripts.js"></script>
     </body>
 </html>
-
-
-
-<!-- <img src="./assets/images/" alt=""> -->
