@@ -78,7 +78,21 @@ button{
     font-family: pFont;
     font-weight: 800;
     border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+
+button:hover,
+button:focus{
+    transform: translateX(10px);
+    box-shadow: 2px 2px $siteOrange;;
+}
+
+button:active {
+    border: lightblue solid 5px;
+    box-shadow: none;
+}
+
 body{
     background-color: #fdf2e5;
 }

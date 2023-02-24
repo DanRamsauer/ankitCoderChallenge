@@ -615,6 +615,23 @@ button {
   font-family: pFont;
   font-weight: 800;
   border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-box-shadow: 2px 2px #f77b21;
+          box-shadow: 2px 2px #f77b21;
+}
+
+button:active {
+  border: lightblue solid 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 body {
