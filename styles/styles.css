@@ -617,7 +617,7 @@ button {
   border-radius: 40px;
 }
 
-* {
+body {
   background-color: #fdf2e5;
 }
 
@@ -766,7 +766,6 @@ button {
   right: 38%;
 }
 .roadmap .roadmapArrow {
-  background: none;
   top: 22%;
   left: 35%;
 }
@@ -814,10 +813,8 @@ button {
   position: absolute;
   -webkit-animation: sparkle 1.5s infinite ease-in-out;
           animation: sparkle 1.5s infinite ease-in-out;
-  background: none;
 }
 .roadmap .holdingPhone {
-  background: none;
   padding: 50px;
   -webkit-animation: phaseOneJump 2.5s infinite;
           animation: phaseOneJump 2.5s infinite;
@@ -848,7 +845,6 @@ button {
   position: relative;
 }
 .roadmap .phaseTwoPerson {
-  background: none;
   padding: 50px;
   -webkit-animation: phaseTwoJump 2.5s infinite;
           animation: phaseTwoJump 2.5s infinite;
@@ -893,6 +889,33 @@ button {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  height: 100vh;
+}
+.community .wrapper::before,
+.community .communityCircleOne,
+.community .communityCircleTwo,
+.community .communityCircleThree {
+  border-radius: 50%;
+  border: 1px solid #e8dcb5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.community .wrapper::before {
+  content: "";
+  width: 75%;
+  height: 65%;
+}
+.community h3::after {
+  top: 34%;
+  width: 100px;
+}
+.community h3 {
+  text-align: start;
+  margin-right: 250px;
 }
 .community p {
   font-size: 1.7rem;
@@ -902,17 +925,150 @@ button {
 .community .communityOrangeStar,
 .community .communityBlackStar {
   position: absolute;
-  background: none;
   -webkit-animation: sparkle 1.5s infinite ease-in-out;
           animation: sparkle 1.5s infinite ease-in-out;
 }
 .community .communityWhiteStar {
-  top: 0;
+  top: 33%;
   right: 15%;
   width: 40px;
 }
 .community .communityOrangeStar {
-  top: 65%;
-  right: -5%;
+  top: 60%;
+  right: -3%;
   width: 15px;
+}
+.community .communityBlackStar {
+  bottom: 29%;
+  left: 1%;
+  width: 20px;
+}
+.community .communityCircleOne {
+  width: 50%;
+  height: 45%;
+}
+.community .communityCircleTwo {
+  width: 100%;
+  height: 85%;
+}
+.community .communityCircleThree {
+  width: 120%;
+  height: 105%;
+}
+.community .communityLine {
+  position: absolute;
+  bottom: 18%;
+  right: 8%;
+}
+.community .communityPersonOne,
+.community .communityPersonTwo,
+.community .communityPersonThree,
+.community .communityPersonFour,
+.community .communityPersonFive {
+  position: absolute;
+  -webkit-animation: jump 2.5s infinite;
+          animation: jump 2.5s infinite;
+  border-radius: 50%;
+}
+.community .communityPersonOne {
+  top: 18%;
+  left: 10%;
+}
+.community .communityPersonTwo {
+  top: -4%;
+  left: 35%;
+}
+.community .communityPersonThree {
+  top: 9%;
+  right: 0%;
+}
+.community .communityPersonFour {
+  bottom: 18%;
+  left: 10%;
+}
+.community .communityPersonFive {
+  bottom: 5%;
+  right: 10%;
+}
+
+.faq {
+  position: relative;
+  margin: 200px 0;
+}
+.faq .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 0 auto;
+}
+.faq .questionsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  max-width: 650px;
+  border-bottom: solid 1px black;
+  margin-left: 400px;
+}
+.faq .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.faq .question p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.faq .answer p {
+  font-size: 0.95rem;
+  line-height: 140%;
+  font-weight: 300;
+}
+.faq h2 {
+  margin: 0;
+  margin-bottom: 100px;
+}
+.faq .faqBlackStar,
+.faq .faqOrangeStar,
+.faq .faqLine {
+  position: absolute;
+}
+.faq .faqBlackStar {
+  top: 45%;
+  left: 23%;
+}
+.faq .faqOrangeStar {
+  bottom: -15%;
+  right: 20%;
+  width: 50px;
+}
+.faq .faqLine {
+  bottom: 10%;
+  left: 12%;
+}
+.faq .plusButton {
+  color: #f77b21;
 }

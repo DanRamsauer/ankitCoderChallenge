@@ -15,7 +15,6 @@
         right: 38%;
     }
     .roadmapArrow{
-        background: none;
         top: 22%;
         left: 35%;
     }
@@ -56,10 +55,8 @@
     .phaseTwoOrangeStar{
         position: absolute;
         animation: $sparkle;
-        background: none;
     }
     .holdingPhone{
-        background: none;
         padding: 50px;
         animation: $phaseOneJump;
         transform: translateY(100px);
@@ -88,7 +85,6 @@
         position: relative;
     }
     .phaseTwoPerson{
-        background: none;
         padding: 50px;
         animation :$phaseTwoJump;
         margin: 0 auto;
