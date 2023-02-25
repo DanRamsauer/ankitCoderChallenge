@@ -223,3 +223,49 @@
         margin-top: 100px;
     }
 }
+
+@media (max-width: 760px) {
+    .wrapper{
+        width: 95%;
+    }
+    header{
+        .banner{
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .mainGhost{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .roadmap{
+        .phaseOneRight,
+        .phaseTwoLeft{
+            height: 40vh;
+            width: 50%;
+        }
+        .holdingPhone{
+            width: 300px;
+        }
+        .phaseTwoPerson{
+            width: 250px;
+        }
+    }
+
+    .faq{
+        .questionsDiv{
+            margin-left: 0;
+        }
+        .faqBlackStar{
+            top: 40%;
+        }
+        .faqOrangeStar{
+            width: 30px;
+        }
+        .faqLine{
+            bottom: -10%;
+        }
+    }
+}

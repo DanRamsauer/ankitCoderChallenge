@@ -266,9 +266,6 @@ header .banner {
       -ms-flex-align: center;
           align-items: center;
 }
-header .banner .mainGhost {
-  position: relative;
-}
 header .banner .bannerWhiteStar {
   right: 0;
   background: none;
@@ -1552,5 +1549,46 @@ footer p {
   }
   .media {
     margin-top: 100px;
+  }
+}
+@media (max-width: 760px) {
+  .wrapper {
+    width: 95%;
+  }
+  header .banner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .banner .mainGhost {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .roadmap .phaseOneRight,
+.roadmap .phaseTwoLeft {
+    height: 40vh;
+    width: 50%;
+  }
+  .roadmap .holdingPhone {
+    width: 300px;
+  }
+  .roadmap .phaseTwoPerson {
+    width: 250px;
+  }
+  .faq .questionsDiv {
+    margin-left: 0;
+  }
+  .faq .faqBlackStar {
+    top: 40%;
+  }
+  .faq .faqOrangeStar {
+    width: 30px;
+  }
+  .faq .faqLine {
+    bottom: -10%;
   }
 }
