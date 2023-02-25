@@ -67,10 +67,10 @@
 
     .roadmap{
         .phaseOne{
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         .phaseTwo{
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
         .phaseOneLeft,
         .phaseOneRight,
@@ -93,9 +93,6 @@
         }
         .holdingPhone{
             width: 60%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         .phaseTwoLeft{
             height: 70vh;
@@ -234,23 +231,60 @@
             flex-wrap: wrap;
 
             .mainGhost{
-                position: absolute;
                 top: 0;
                 right: 0;
+                left: 0;
+                bottom: 0;
             }
+        }
+        .blurredGhostImg1{
+            top: 85%;
+            left: 10%;
+        }
+        .blurredGhostImg2{
+            left: 10333333333%;
+        }
+        .bannerOrangeStar{
+            top: 70%;
+            right: 40%;
+        }
+        .bannerWhiteStar{
+            left: 50%;
+        }
+        .bannerBlackStar{
+            top: 100%;
+            left: 20%;
+        }
+        .bannerCircleOne{
+            width: 40%;
+            height: 30%;
+            transform: translate(-70%, 85%);
+        }
+        .bannerCircleTwo{
+            transform: translate(-65%, 30%);
+            width: 65%;
+            height: 50%;
+        }
+        .bannerCircleThree{
+            transform: translate(-60%, 10%);
+            width: 90%;
+            height: 70%;
+        }
+        .chatPerson{
+            width: 50%;
         }
     }
     .roadmap{
         .phaseOneRight,
         .phaseTwoLeft{
-            height: 40vh;
-            width: 50%;
-        }
-        .holdingPhone{
-            width: 300px;
+            height: 30vh;
+            width: 90%;
         }
         .phaseTwoPerson{
             width: 250px;
+        }
+        .roadmapArrow{
+            left: 11111%;
         }
     }
 
@@ -266,6 +300,74 @@
         }
         .faqLine{
             bottom: -10%;
+        }
+    }
+    .about{
+        .aboutOrangeStar{
+            top: -110%;
+            right: -250%;
+        }
+        .flexBox{
+            flex-direction: column;
+        }
+        .aboutWhiteStar{
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .community{
+        margin: 0;
+
+        .wrapper::before{
+            width: 0%;
+            height: 0%;
+        }
+        .communityCircleOne{
+            width: 60%;
+            height: 40%;
+        }
+        .communityCircleTwo{
+            width: 90%;
+            height: 60%;
+        }
+        .communityCircleThree{
+            width: 120%;
+            height: 80%;
+        }
+        .communityPersonOne{
+            top: 13%;
+            left: 10%;
+        }
+        .communityPersonThree{
+            top: 70%;
+            right: 0%;
+        }
+        .communityPersonFour{
+            bottom: 15%;
+            left: 10%;
+        }
+        .communityPersonTwo{
+            left: 30005%;
+        }
+        .communityPersonFive{
+            right: 100000%;
+        }
+        .communityOrangeStar{
+            top: 0;
+        }
+    }
+
+    .media{
+        .logos{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            position: absolute;
+            top: 15%;
+            right: 8%;
         }
     }
 }

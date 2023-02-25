@@ -1387,20 +1387,20 @@ footer p {
   }
   .roadmap .phaseOne {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .roadmap .phaseTwo {
-    -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .roadmap .phaseTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .roadmap .phaseOneLeft,
-.roadmap .phaseOneRight,
-.roadmap .phaseTwoRight,
-.roadmap .phaseTwoLeft {
+  .roadmap .phaseOneRight,
+  .roadmap .phaseTwoRight,
+  .roadmap .phaseTwoLeft {
     width: 100%;
   }
   .roadmap .roadmapArrow {
@@ -1418,15 +1418,6 @@ footer p {
   }
   .roadmap .holdingPhone {
     width: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .roadmap .phaseTwoLeft {
     height: 70vh;
@@ -1564,20 +1555,60 @@ footer p {
         flex-wrap: wrap;
   }
   header .banner .mainGhost {
-    position: absolute;
     top: 0;
     right: 0;
+    left: 0;
+    bottom: 0;
   }
-  .roadmap .phaseOneRight,
-.roadmap .phaseTwoLeft {
-    height: 40vh;
+  header .blurredGhostImg1 {
+    top: 85%;
+    left: 10%;
+  }
+  header .blurredGhostImg2 {
+    left: 10333333333%;
+  }
+  header .bannerOrangeStar {
+    top: 70%;
+    right: 40%;
+  }
+  header .bannerWhiteStar {
+    left: 50%;
+  }
+  header .bannerBlackStar {
+    top: 100%;
+    left: 20%;
+  }
+  header .bannerCircleOne {
+    width: 40%;
+    height: 30%;
+    -webkit-transform: translate(-70%, 85%);
+            transform: translate(-70%, 85%);
+  }
+  header .bannerCircleTwo {
+    -webkit-transform: translate(-65%, 30%);
+            transform: translate(-65%, 30%);
+    width: 65%;
+    height: 50%;
+  }
+  header .bannerCircleThree {
+    -webkit-transform: translate(-60%, 10%);
+            transform: translate(-60%, 10%);
+    width: 90%;
+    height: 70%;
+  }
+  header .chatPerson {
     width: 50%;
   }
-  .roadmap .holdingPhone {
-    width: 300px;
+  .roadmap .phaseOneRight,
+  .roadmap .phaseTwoLeft {
+    height: 30vh;
+    width: 90%;
   }
   .roadmap .phaseTwoPerson {
     width: 250px;
+  }
+  .roadmap .roadmapArrow {
+    left: 11111%;
   }
   .faq .questionsDiv {
     margin-left: 0;
@@ -1590,5 +1621,76 @@ footer p {
   }
   .faq .faqLine {
     bottom: -10%;
+  }
+  .about .aboutOrangeStar {
+    top: -110%;
+    right: -250%;
+  }
+  .about .flexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutWhiteStar {
+    position: absolute;
+    right: 0;
+  }
+  .community {
+    margin: 0;
+  }
+  .community .wrapper::before {
+    width: 0%;
+    height: 0%;
+  }
+  .community .communityCircleOne {
+    width: 60%;
+    height: 40%;
+  }
+  .community .communityCircleTwo {
+    width: 90%;
+    height: 60%;
+  }
+  .community .communityCircleThree {
+    width: 120%;
+    height: 80%;
+  }
+  .community .communityPersonOne {
+    top: 13%;
+    left: 10%;
+  }
+  .community .communityPersonThree {
+    top: 70%;
+    right: 0%;
+  }
+  .community .communityPersonFour {
+    bottom: 15%;
+    left: 10%;
+  }
+  .community .communityPersonTwo {
+    left: 30005%;
+  }
+  .community .communityPersonFive {
+    right: 100000%;
+  }
+  .community .communityOrangeStar {
+    top: 0;
+  }
+  .media .logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .media img {
+    position: absolute;
+    top: 15%;
+    right: 8%;
   }
 }
