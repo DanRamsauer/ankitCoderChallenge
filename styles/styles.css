@@ -335,6 +335,7 @@ header .airplanePerson {
 header .chatPerson {
   top: 78%;
   left: calc((100vw - 1000px) / 2 + 1100px);
+  max-width: 25%;
 }
 header .blurredGhostImg1 {
   top: 20%;
@@ -1323,33 +1324,203 @@ footer p {
   left: 0;
 }
 
-@media (max-width: 2269px) {
-  header .banner .collectBanner::before {
-    content: "";
-    display: block;
-    width: 140px;
-    height: 4px;
-    background: #f77b21;
-    left: 15px;
-    top: 68%;
-    position: absolute;
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 60%;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 80px;
+  }
+  header h1 {
+    font-size: 5rem;
+    line-height: 80px;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+  header .bannerLine {
+    left: 10%;
+    top: 30%;
+  }
+  header .mainGhost {
+    width: 60%;
+  }
+  header .blurredGhostImg1 {
+    top: 15%;
+    left: 44%;
+    width: 10%;
+  }
+  header .blurredGhostImg2 {
+    width: 15%;
   }
   header .bannerCircleOne {
     width: 23%;
-    height: 58%;
-    -webkit-transform: translate(25%, -18%);
-            transform: translate(25%, -18%);
+    height: 40%;
+    -webkit-transform: translate(38%, -18%);
+            transform: translate(38%, -18%);
   }
   header .bannerCircleTwo {
-    -webkit-transform: translate(1%, -28%);
-            transform: translate(1%, -28%);
+    -webkit-transform: translate(6%, -30%);
+            transform: translate(6%, -30%);
     width: 36%;
-    height: 85%;
+    height: 65%;
   }
   header .bannerCircleThree {
-    -webkit-transform: translate(-15%, -35%);
-            transform: translate(-15%, -35%);
+    -webkit-transform: translate(-10%, -35%);
+            transform: translate(-10%, -35%);
     width: 50%;
-    height: 120%;
+    height: 90%;
+  }
+  header .bannerBlackStar {
+    bottom: 20%;
+  }
+  header .bannerOrangeStar {
+    top: 20%;
+  }
+  header .airplanePerson {
+    left: 0;
+  }
+  header .chatPerson {
+    left: 80%;
+    width: 15%;
+  }
+  .about p {
+    font-size: 1.5rem;
+  }
+  .roadmap .phaseOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .roadmap .phaseTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .roadmap .phaseOneLeft,
+.roadmap .phaseOneRight,
+.roadmap .phaseTwoRight,
+.roadmap .phaseTwoLeft {
+    width: 100%;
+  }
+  .roadmap .roadmapArrow {
+    top: 16%;
+    left: 70%;
+  }
+  .roadmap .phaseOneLeft {
+    margin-bottom: 50px;
+  }
+  .roadmap .phaseTwoRight {
+    margin-bottom: 50px;
+  }
+  .roadmap .phaseOneRight {
+    height: 70vh;
+  }
+  .roadmap .holdingPhone {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .roadmap .phaseTwoLeft {
+    height: 70vh;
+  }
+  .roadmap .phaseTwoPerson {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .roadmap .phaseTwoPerson {
+    width: 40%;
+  }
+  .community {
+    margin-top: 250px;
+  }
+  .community .communityCircleOne {
+    width: 60%;
+    height: 70%;
+  }
+  .community .communityCircleTwo {
+    width: 100%;
+    height: 115%;
+  }
+  .community .communityCircleThree {
+    width: 120%;
+    height: 135%;
+  }
+  .community .wrapper::before {
+    width: 80%;
+    height: 90%;
+  }
+  .community .communityPersonOne {
+    top: 13%;
+    left: 10%;
+  }
+  .community .communityPersonTwo {
+    top: -19%;
+    left: 35%;
+  }
+  .community .communityPersonThree {
+    top: 9%;
+    right: 0%;
+  }
+  .community .communityPersonFour {
+    bottom: 1%;
+    left: 10%;
+  }
+  .community .communityPersonFive {
+    bottom: -5%;
+    right: 10%;
+  }
+  .community .communityLine {
+    bottom: -20%;
+  }
+  .faq .questionsDiv {
+    margin-left: 300px;
+  }
+  .faq .questionsDiv p {
+    font-size: 1.3rem;
+  }
+  .media p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1135px) {
+  header .bannerCircleOne {
+    width: 23%;
+    height: 40%;
+    -webkit-transform: translate(47%, -18%);
+            transform: translate(47%, -18%);
+  }
+  header .bannerCircleTwo {
+    -webkit-transform: translate(13%, -30%);
+            transform: translate(13%, -30%);
+    width: 36%;
+    height: 65%;
+  }
+  header .bannerCircleThree {
+    -webkit-transform: translate(-5%, -35%);
+            transform: translate(-5%, -35%);
+    width: 50%;
+    height: 90%;
+  }
+  header .airplanePerson {
+    top: 80%;
+    left: -2%;
   }
 }
