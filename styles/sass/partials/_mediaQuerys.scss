@@ -192,3 +192,34 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    .wrapper{
+        width: 80%;
+    }
+    header{
+        .bannerCircleOne{
+            width: 30%;
+            height: 40%;
+            transform: translate(38%, -18%);
+        }
+        .bannerCircleTwo{
+            transform: translate(3%, -30%);
+            width: 50%;
+            height: 65%;
+        }
+        .bannerCircleThree{
+            transform: translate(-15%, -35%);
+            width: 70%;
+            height: 90%;
+        }
+        .airplanePerson{
+            top: 80%;
+            left: -255%;
+        }
+    }
+
+    .media{
+        margin-top: 100px;
+    }
+}

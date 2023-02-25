@@ -1524,3 +1524,33 @@ footer p {
     left: -2%;
   }
 }
+@media (max-width: 960px) {
+  .wrapper {
+    width: 80%;
+  }
+  header .bannerCircleOne {
+    width: 30%;
+    height: 40%;
+    -webkit-transform: translate(38%, -18%);
+            transform: translate(38%, -18%);
+  }
+  header .bannerCircleTwo {
+    -webkit-transform: translate(3%, -30%);
+            transform: translate(3%, -30%);
+    width: 50%;
+    height: 65%;
+  }
+  header .bannerCircleThree {
+    -webkit-transform: translate(-15%, -35%);
+            transform: translate(-15%, -35%);
+    width: 70%;
+    height: 90%;
+  }
+  header .airplanePerson {
+    top: 80%;
+    left: -255%;
+  }
+  .media {
+    margin-top: 100px;
+  }
+}
